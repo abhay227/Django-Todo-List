@@ -1,0 +1,272 @@
+/* .home-Container{
+    width: 90%;
+    margin: auto;
+} */
+.home-header-container{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+.add-new-button{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 22px;
+    border: 0;
+    background-color: rgba(0, 85, 255, 0.611);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.add-new-button:active{
+    transform: scale(0.85);
+}
+.header-logo-text{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgba(0, 85, 255, 0.833);
+    
+}
+header{
+    /* border: 2px solid red; */
+    padding: 20px 0px;
+}
+.Search-Input{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    border: 0;
+    border: 1px solid gainsboro;
+    outline-color: rgba(0, 0, 255, 0.573);
+}
+.searchIcon{
+    color: rgb(151, 151,151);
+    position: absolute;
+    right: 11px;
+    top: 26px;
+    bottom: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green; */
+    background-color: white;
+}
+.Search-icon-wrapper{
+    /* border: 2px solid red; */
+    margin: 20px auto;
+    width: 80%;
+    position: relative;
+}
+.completed-todo-title{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.filter-container{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: start;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid gainsboro; */
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 100px;
+    /* align-items: center; */
+
+}
+.btn-container{
+    flex: 1;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+} 
+.btn-container > button{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 15px;
+    background-color: white;
+    overflow: hidden;
+    border: 0;
+    gap: 10px;
+}
+.btn-container > button:hover{
+    border : 1px solid rgba(0, 0, 255, 0.573);
+    border-radius: 20px;
+}
+.btn-container > .active-filter{
+    background-color: rgba(0, 85, 255, 0.611);
+    color: white;
+    border-radius: 20px;
+}
+.active-filter-value{
+    color: black;
+}
+.btn-container > button > h3,.btn-container> button > p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.btn-container > button > p{
+    aspect-ratio: 1/1;
+    background-color: gainsboro;
+    border-radius: 50%;
+    padding: 10px;
+    min-width: 30px;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-card{
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid gainsboro;
+    border-radius: 20px;
+    gap: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+.todo-card-header{
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox{
+    border: 2px solid gainsboro;
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.checkbox-active{
+    border: 2px solid rgb(255, 0, 0);
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.todo-card-container{
+    width: 100%;
+    gap: 20px;
+}
+.todo-title{
+    font-size: 23px;
+    font-weight: 800;
+}
+.todo-desc{
+    font-size: 15px;
+    font-weight: 350;
+}
+.icon-container{
+    display: flex;
+    gap: 10px;
+    color: rgb(42, 42, 42);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.archive:hover{
+    color: brown;
+}
+.edit:hover{
+    color: rgb(2, 19, 255)
+}
+.delete:hover{
+    color:  rgb(255, 2, 2);
+}
+.todo-main-container{
+    margin-top: 5px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.butn-container{
+    display: flex;
+    gap: 10px;
+}
+.add-overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+.add-task-container{
+    position: fixed;
+    
+    z-index: 150;
+    width: min-content;
+    height: min-content;
+
+
+    /* to make it center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.add-task-contents{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.form-content > input,
+.form-content > textarea,
+.form-content > button
+{
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    padding: 20px;
+    border-radius: 20px;
+    outline-color: rgba(0, 85, 255, 0.611);
+}
+.form-content > button{
+    outline: none;
+    border: 0;
+    background-color: rgba(0, 85, 255, 0.611);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: whitesmoke;
+}
+.form-content > button:active{
+    transform: scale(0.95);
+}
+/* media queries */
+@media (min-width: 768px){
+    .header-logo-text{
+        font-size: 40px
+    }
+    .add-new-button{
+        padding: 12px;
+        font-size: 22px;
+    }
+    .home-header-container{
+        width: 80%;
+    }
+}
