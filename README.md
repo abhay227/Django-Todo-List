@@ -16,3 +16,12 @@ to proceed into app you should login using username Abhay and Password 12345 you
 4.You can also edit, delete,Archive an existing task using buttons in right. 
 
 To logout use the button next to new.
+
+## Tech Stacks being used to make this>>>
+1.Html,Css,Js(as fundamental part).
+
+2.React js(front framework of the js, for view)
+
+3.Django(python web framework for the backend building)
+
+4.MySQL(for storing UserData and tasks)
