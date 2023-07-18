@@ -18,7 +18,7 @@ to proceed into app you should login using username Abhay and Password 12345 you
 To logout use the button next to new.
 
 ## Tech Stacks being used to make this>>>
-1.Html,Css,Js(as fundamental part).
+1.Html,CSS,Js,Python (as fundamental part).
 
 2.React js(front framework of the js, for view)
 
